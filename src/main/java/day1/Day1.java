@@ -9,7 +9,7 @@ public class Day1 {
 
     public static void main(String[] args) {
 
-        String filePath = "src/day1/input.txt";
+        String filePath = "./src/main/resources/day1.txt";
         List<String> lines = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {

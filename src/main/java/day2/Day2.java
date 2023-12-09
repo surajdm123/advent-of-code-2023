@@ -66,7 +66,7 @@ public class Day2 {
 
     public static void main(String[] args) {
         FileHelper fileHelper = new FileHelper();
-        String[] lines = fileHelper.getLines("src/day2/input.txt");
+        String[] lines = fileHelper.getLines("day2.txt");
 
         int sum = 0;
 

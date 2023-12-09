@@ -7,7 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileHelper {
-    public String[] getLines(final String filePath) {
+    public String[] getLines(final String fileName) {
+
+        String filePath = "./src/main/resources/" + fileName;
+
         List<String> lines = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
@@ -24,9 +27,11 @@ public class FileHelper {
         return linesArray;
     }
 
-    public char[][] getCharGridFromPath(final String filePath) throws IOException {
+    public char[][] getCharGridFromPath(final String fileName) throws IOException {
         List<String> lines = new ArrayList<>();
         int maxColumns = 0;
+
+        String filePath = "./src/main/resources/" + fileName;
 
         // Read the file and find the maximum line length
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {

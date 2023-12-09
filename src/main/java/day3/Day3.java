@@ -14,7 +14,9 @@ public class Day3 {
 
     public static void main(String[] args) throws Exception{
         FileHelper fileHelper = new FileHelper();
-        final String filePath = "src/day3/input.txt";
+        final String filePath = "./src/main/resources/input.txt";
+
+        System.out.println(System.getProperty("user.dir"));
 
         grid = fileHelper.getCharGridFromPath(filePath);
         rows = grid.length;

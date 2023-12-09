@@ -13,7 +13,7 @@ public class Day4 {
 
     public static void main(String args[]) {
         FileHelper helper = new FileHelper();
-        String[] lines = helper.getLines("src/day4/input.txt");
+        String[] lines = helper.getLines("day4.txt");
 
         // Part 1:
         int totalPoints = 0;
