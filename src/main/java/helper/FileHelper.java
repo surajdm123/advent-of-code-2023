@@ -3,6 +3,8 @@ package helper;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,5 +57,10 @@ public class FileHelper {
         }
 
         return charArray;
+    }
+
+    public String readFileAsString(String fileName) throws IOException {
+        final String filePath = "./src/main/resources/" + fileName;
+        return new String(Files.readAllBytes(Paths.get(filePath)));
     }
 }
